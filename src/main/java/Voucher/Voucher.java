@@ -38,13 +38,6 @@ public class Voucher {
         this.tripDate = tripDate;
     }
 
-    public String toStringLogger() {
-        return String.format(
-                "Тип: %s%nКраїна: %s%nТранспорт: %s%nХарчування: %s%nБюджет: %s%nКількість днів: %d%nДата поїздки: %s%nЦіна: %d",
-                type, country, transport, nutrition, budget, numberOfDays, tripDate, price
-        );
-    }
-
     public static Voucher fromString(String line) {
         String typeString = line.substring(0, 25).trim();
         String countryString = line.substring(25, 45).trim();
@@ -93,7 +86,7 @@ public class Voucher {
 
     @Override
     public String toString() {
-        String format = "%-25s%-20s%-20s%-20s%-15s%-8s%-15s%-15s";
+        String format = "%-25s%-20s%-20s%-20s%-15s%-8s%-15s%-6s";
 
         return String.format(format,
                 type,
