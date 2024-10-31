@@ -2,23 +2,23 @@ package Commands;
 
 import java.util.Scanner;
 
-public class ReferenceCommand extends Command {
+public class Reference extends Command {
 
-    public ReferenceCommand(String title) {
+    public Reference(String title) {
         super(title);
     }
 
     @Override
     public void execute() {
         Scanner scanner1 = new Scanner(System.in);
-        System.out.println("\nФункціонал програми:\n");
-        System.out.println("1. Додати путівку      - Введіти дані про нову путівку.");
-        System.out.println("2. Фільтрувати путівки - Виберіть критерії для відбору: країна, тип, транспорт, харчування, бюджет.");
-        System.out.println("3. Сортувати путівки   - Можна сортувати за: назвою, кількістю днів, ціною, датою.");
-        System.out.println("4. Видалити путівку    - Вибрати путівку для видалення.");
-        System.out.println("5. Показати путівки    - Виведення списку путівок.");
+        System.out.println("\n\tФункціонал програми:\n");
+        System.out.println("\t1. Додати путівку      - Введіти дані про нову путівку.");
+        System.out.println("\t2. Фільтрувати путівки - Виберіть критерії для відбору: країна, тип, транспорт, харчування, бюджет.");
+        System.out.println("\t3. Сортувати путівки   - Можна сортувати за: назвою, кількістю днів, ціною, датою.");
+        System.out.println("\t4. Видалити путівку    - Вибрати путівку для видалення.");
+        System.out.println("\t5. Показати путівки    - Виведення списку путівок.");
 
-        System.out.println("\n\nСтруктура функціоналу програми:");
+        System.out.println("\n\n\tСтруктура функціоналу програми:\n");
 
         System.out.println("\t------------------------------------------           --------------------------------------------");
         System.out.println("\t|              Головне меню              |    |----→ | Послідовність введення даних про путівку |");

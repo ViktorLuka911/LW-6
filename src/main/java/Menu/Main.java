@@ -5,25 +5,25 @@ import Utilities.Utilities;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class MenuMain extends Menu {
+public class Main extends Menu {
 
-    public MenuMain() {
+    public Main() {
 
         ArrayList<Menu> subMenus = new ArrayList<>(
                 Arrays.asList(
-                        new MenuCategory(),
-                        new MenuSort()
+                        new Category(),
+                        new Sort()
                 )
         );
 
         ArrayList<Command> commands = new ArrayList<>(
                 Arrays.asList(
-                        new ReferenceCommand("Довідка"),
-                        new ShowListCommand("Поточний список"),
-                        new AddVoucherCommand("Додати путівку"),
-                        new GoToMenuCommand("Путівки за категорією", subMenus.get(0)),
-                        new GoToMenuCommand("Посортувати путівки", subMenus.get(1)),
-                        new DeleteVoucherCommand("Видалити путівку")
+                        new Reference("Довідка"),
+                        new ShowList("Поточний список"),
+                        new AddVoucher("Додати путівку"),
+                        new GoToMenu("Путівки за категорією", subMenus.get(0)),
+                        new GoToMenu("Посортувати путівки", subMenus.get(1)),
+                        new DeleteVoucher("Видалити путівку")
                 )
         );
 

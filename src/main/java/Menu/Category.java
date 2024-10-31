@@ -1,25 +1,25 @@
 package Menu;
 
 import Commands.Command;
-import Commands.ShowListCommand;
+import Commands.ShowList;
 import Utilities.Utilities;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class MenuCategory extends Menu {
+public class Category extends Menu {
 
-    public MenuCategory() {
+    public Category() {
 
         ArrayList<Menu> subMenus = new ArrayList<>();
 
         ArrayList<Command> commands = new ArrayList<>(
                 Arrays.asList(
-                        new ShowListCommand("Вивести всі путівки"),
-                        new ShowListCommand("За країною"),
-                        new ShowListCommand("За типом"),
-                        new ShowListCommand("За транспортом"),
-                        new ShowListCommand("За харчуванням"),
-                        new ShowListCommand("За бюджетом")
+                        new ShowList("Вивести всі путівки"),
+                        new ShowList("За країною"),
+                        new ShowList("За типом"),
+                        new ShowList("За транспортом"),
+                        new ShowList("За харчуванням"),
+                        new ShowList("За бюджетом")
                 )
         );
 

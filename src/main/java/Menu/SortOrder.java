@@ -1,21 +1,21 @@
 package Menu;
 
 import Commands.Command;
-import Commands.SortCommand;
+import Commands.Sort;
 import Utilities.Utilities;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class MenuSortOrder extends Menu {
+public class SortOrder extends Menu {
 
-    public MenuSortOrder(String type) {
+    public SortOrder(String type) {
 
         ArrayList<Menu> subMenus = new ArrayList<>();
 
         ArrayList<Command> commands = new ArrayList<>(
                 Arrays.asList(
-                        new SortCommand(type, "За зростанням"),
-                        new SortCommand(type, "За спаданням")
+                        new Sort(type, "За зростанням"),
+                        new Sort(type, "За спаданням")
                 )
         );
 

@@ -1,10 +1,10 @@
 package Commands;
 
-public class SortCommand extends Command {
+public class Sort extends Command {
 
     private final String type;
 
-    public SortCommand(String type, String title) {
+    public Sort(String type, String title) {
         super(title);
         this.type = type;
     }

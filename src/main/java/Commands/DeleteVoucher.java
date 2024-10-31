@@ -3,8 +3,8 @@ package Commands;
 import Utilities.Utilities;
 import java.util.Scanner;
 
-public class DeleteVoucherCommand extends Command {
-    public DeleteVoucherCommand(String title) {
+public class DeleteVoucher extends Command {
+    public DeleteVoucher(String title) {
         super(title);
     }
 

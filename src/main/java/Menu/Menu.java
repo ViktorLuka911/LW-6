@@ -3,7 +3,7 @@ package Menu;
 import Commands.*;
 import SystemVouchers.SystemVouchers;
 import Utilities.Utilities;
-import Loggers.*;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -24,7 +24,7 @@ public class Menu {
         boolean isRunning;
         Scanner scanner = new Scanner(System.in);
 
-        if (systemVouchers.getVouchers().isEmpty() && !(this instanceof MenuMain)) {
+        if (systemVouchers.getVouchers().isEmpty() && !(this instanceof Main)) {
             System.out.println("\n\tСписок вибраних путівок порожній.");
             System.out.print("\n\tНатисніть Enter, щоб продовжити...");
             scanner.nextLine();

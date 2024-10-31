@@ -1,11 +1,10 @@
-import Menu.MenuMain;
 import SystemVouchers.SystemVouchers;
 
 public class Main {
     public static void main() {
         SystemVouchers systemVouchers = SystemVouchers.getInstance();
 
-        MenuMain menu = new MenuMain();
+        Menu.Main menu = new Menu.Main();
         menu.startMenu();
 
         systemVouchers.closeDataFileLogger();
